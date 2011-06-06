@@ -16,6 +16,7 @@
     </prerequisites>
 
 	<build>
+		<finalName>deploy-agent</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
