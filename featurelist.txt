@@ -1,0 +1,60 @@
+Minimum Steps:
+--------------
+- Clean up Code
+- Find Version Control
+
+Agent Features:
+---------------
+- HTTPS access
+- "authenticated requests from server"
+- parameterized builds, specifically version to download
+- tighter maven repo integration (download groupId:artifactId:type:version)
+- report on the currently deployed status
+- tighter integration of script execution status and HTTP status code
+- Hudson plugin that executes the deployment signals (need to refute why not using Hudson slave)
+- package as app using Maven assembly plugin
+- write shell and bash scripts for serverside execution
+- write solaris service configuration
+- add a ping page
+- output logs to the HTML page
+- provide a way to manually deploy/redeploy without hudson (need to think about this one)
+- report on the status of currently "managed assets"
+- deploy files from SVN, like configuration files (how?  local svn checkout and copy or download to target location)
+- configuration on the agent side to define "managed assets and/or scripts"
+- http command to restart the server instance
+
+
+Candidate Platform/Tools:
+----------------------
+- Build Tools
+    - Maven 3
+    - Buildr
+    - Gradle
+- Project Management
+    - Google Code
+- Continuous Integration
+    - Hudson CI
+    - Amazon AWS
+- Testing Tools
+    - Unit Testing
+        - JUnit
+        - TestNG
+    - Integration Testing
+        - MycilaTest
+    - BDD/ATDD
+        - easyb
+        - JBehave
+        - Concordion
+- Architecture
+    - Dependency Injection
+        - Spring3
+        - Guice
+    - Listener 
+        - Jetty Embedded
+        - HttpClient
+        - Google ProtocolBuffers
+    - Authentication/Authorization
+        - Shared Secret
+        - Public/Private Keys
+        - LDAP?
+        - HTTP Authentication
